@@ -18,25 +18,49 @@
             <span class="navbar-item">
               <router-link class="navbar-item button is-white is-outlined" to="/projects">
                   <span class="icon">
-                      <i class="fa fa-superpowers"></i>
+                      <i class="fas fa-project-diagram"></i>
                   </span>
-                  <span>Examples</span>
+                  <span>Projects</span>
               </router-link>
             </span>
             <span class="navbar-item">
-                <router-link class="navbar-item button is-white is-outlined" to="/resume">
+              <router-link class="navbar-item button is-white is-outlined" to="/about">
+                  <span class="icon">
+                      <i class="fas fa-project-diagram"></i>
+                  </span>
+                  <i class="fas fa-user-astronaut"></i>
+              </router-link>
+            </span>
+            <span class="navbar-item">
+              <router-link class="navbar-item button is-white is-outlined" to="/skills">
+                  <span class="icon">
+                      <i class="far fa-star"></i>
+                  </span>
+                  <span>Skills</span>
+              </router-link>
+            </span>
+            <span class="navbar-item">
+                <router-link class="navbar-item button is-white is-outlined" to="https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing">
                     <span class="icon">
                         <i class="fa fa-book"></i>
                     </span>
-                    <span>Documentation</span>
+                    <span>Resume</span>
                 </router-link>
             </span>
             <span class="navbar-item">
-              <router-link class="navbar-item button is-white is-outlined" to="/github">
+              <router-link class="navbar-item button is-white is-outlined" to="https://github.com/Minaparnian">
                     <span class="icon">
-                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <i class="fas fa-address-book"></i>
                     </span>
-                    <span>View Source</span>
+                    <span>Contacts</span>
+              </router-link>
+            </span>
+            <span class="navbar-item">
+              <router-link class="navbar-item button is-white is-outlined" to="https://github.com/Minaparnian">
+                    <span class="icon">
+                        <i class="fab fa-github-alt"></i>
+                    </span>
+                    <span>Github</span>
               </router-link>
             </span>
           </div>
