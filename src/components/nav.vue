@@ -14,58 +14,12 @@
         </div>
         <div class="navbar-menu" id="navbarMenu">
           <div class="navbar-end">
-            <span class="navbar-item">
-              <router-link class="navbar-item button is-white is-outlined" to="/">
-                <span class="icon"><i class="fa fa-home"></i></span>
-                <span>Home</span>
-              </router-link>
-            </span>
-            <span class="navbar-item">
-              <router-link class="navbar-item button is-white is-outlined" to="/projects">
+            <span class="navbar-item" v-for="item in navbar" :key="item">
+              <router-link class="navbar-item button is-white is-outlined" :to="{path:item.router}">
                   <span class="icon">
-                      <i class="fas fa-project-diagram"></i>
+                      <i :class="item.fa +  ' fa-' +  item.icon"></i>
                   </span>
-                  <span>Projects</span>
-              </router-link>
-            </span>
-            <span class="navbar-item">
-              <router-link class="navbar-item button is-white is-outlined" to="/about">
-                  <span class="icon">
-                      <i class="fas fa-project-diagram"></i>
-                  </span>
-                  <i class="fas fa-user-astronaut"></i>
-              </router-link>
-            </span>
-            <span class="navbar-item">
-              <router-link class="navbar-item button is-white is-outlined" to="/skills">
-                  <span class="icon">
-                      <i class="far fa-star"></i>
-                  </span>
-                  <span>Skills</span>
-              </router-link>
-            </span>
-            <span class="navbar-item">
-                <router-link class="navbar-item button is-white is-outlined" to="https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing">
-                    <span class="icon">
-                        <i class="fa fa-book"></i>
-                    </span>
-                    <span>Resume</span>
-                </router-link>
-            </span>
-            <span class="navbar-item">
-              <router-link class="navbar-item button is-white is-outlined" to="https://github.com/Minaparnian">
-                    <span class="icon">
-                        <i class="fas fa-address-book"></i>
-                    </span>
-                    <span>Contacts</span>
-              </router-link>
-            </span>
-            <span class="navbar-item">
-              <router-link class="navbar-item button is-white is-outlined" to="https://github.com/Minaparnian">
-                    <span class="icon">
-                        <i class="fab fa-github-alt"></i>
-                    </span>
-                    <span>Github</span>
+                  <span v-text="item.name"></span>
               </router-link>
             </span>
           </div>
@@ -80,6 +34,16 @@ export default {
   name: '',
   data () {
     return {
+      navbar: [
+        {name: 'Home', router: '/', icon: 'home', fa: 'fas'},
+        {name: 'Projects', router: '/projects', icon: 'project-diagram', fa: 'fas'},
+        {name: 'About', router: '/about', icon: 'project-diagram', fa: 'fas'},
+        {name: 'Skills', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'star', fa: 'fas'},
+        {name: 'Resume', router: '/projects', icon: 'book', fa: 'fas'},
+        {name: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'address-book', fa: 'fas'},
+        {name: 'Github', router: '/https://github.com/Minaparnian', icon: 'github-alt', fa: 'fab'}
+      ]
+
     }
   }
 }
