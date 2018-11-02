@@ -6,7 +6,7 @@
           <a class="navbar-item" href="../">
               <img src="static/wave.png" alt="Logo">
           </a>
-          <span class="navbar-burger" data-target="navbarMenu">
+          <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
               <span></span>
               <span></span>
