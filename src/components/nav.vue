@@ -6,13 +6,13 @@
           <a class="navbar-item" href="../">
               <img src="static/wave.png" alt="Logo">
           </a>
-          <span class="navbar-burger burger" data-target="navbarMenu">
+          <span @click="display = !display" :class="['navbar-burger burger', {'is-active' : display }]" data-target="navbarMenu">
               <span></span>
               <span></span>
               <span></span>
           </span>
         </div>
-        <div class="navbar-menu" id="navbarMenu">
+        <div :class="['navbar-menu',{'is-active': display}]" id="navbarMenu">
           <div class="navbar-end">
             <span class="navbar-item" v-for="item in navbar" :key="item">
               <router-link class="navbar-item button is-white is-outlined" :to="{path:item.router}">
@@ -31,23 +31,21 @@
 <script>
 export default {
   name: '',
-  data () {
-    return {
-      navbar: [
-        {name: 'Home', router: '/', icon: 'home', fa: 'fas'},
-        {name: 'Projects', router: '/projects', icon: 'project-diagram', fa: 'fas'},
-        {name: 'About', router: '/about', icon: 'project-diagram', fa: 'fas'},
-        {name: 'Skills', router: '/skills', icon: 'star', fa: 'fas'},
-        {name: 'Resume', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'book', fa: 'fas'},
-        {name: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'address-book', fa: 'fas'},
-        {name: 'Github', router: '/https://github.com/Minaparnian', icon: 'github-alt', fa: 'fab'}
-      ]
-    }
-  }
+  data: () => ({
+    navbar: [
+      {name: 'Home', router: '/', icon: 'home', fa: 'fas'},
+      {name: 'Projects', router: '/projects', icon: 'project-diagram', fa: 'fas'},
+      {name: 'About', router: '/about', icon: 'project-diagram', fa: 'fas'},
+      {name: 'Skills', router: '/skills', icon: 'star', fa: 'fas'},
+      {name: 'Resume', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'book', fa: 'fas'},
+      {name: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'address-book', fa: 'fas'},
+      {name: 'Github', router: '/https://github.com/Minaparnian', icon: 'github-alt', fa: 'fab'}
+    ],
+    display: false
+  })
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 
 </style>
