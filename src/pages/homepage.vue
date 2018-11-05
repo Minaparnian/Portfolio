@@ -1,30 +1,27 @@
 <template>
-  <section class="hero is-info is-fullheight">
-    <div class="hero-head">
-      <Nav></Nav>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+        <div class="column is-6 is-offset-3">
+            <h1 class="title">
+                Homepage is coming soon
+            </h1>
+            <h2 class="subtitle">
+                $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
+            </h2>
+        </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-
-import Nav from '@/components/nav'
-
 export default {
-  components: {Nav},
   name: 'Homepage',
   data () {
     return {
-
     }
   }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.is-info {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/wse-top-banner.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-
 </style>

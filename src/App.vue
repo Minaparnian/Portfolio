@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-  <nav></nav>
-  <router-view></router-view>
+    <div class="hero is-info is-fullheight">
+      <navSection></navSection>
+      <router-view></router-view>
+    </div>
+    <div class="hero-foot">
+      <footerSection>hello</footerSection>
+    </div>
   </div>
 </template>
 
 <script>
-import Nav from '@/components/nav'
+import navSection from '@/components/nav'
+import footerSection from '@/components/footer'
 export default {
   name: 'App',
-  components: {
-    'nav': Nav
-  }
+  components: {navSection, footerSection}
 }
 </script>
 
@@ -22,5 +26,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.is-info {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/wse-top-banner.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 </style>

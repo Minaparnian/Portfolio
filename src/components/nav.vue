@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hero-head">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
@@ -28,7 +28,6 @@
     </nav>
   </div>
 </template>
-
 <script>
 export default {
   name: '',
@@ -38,12 +37,11 @@ export default {
         {name: 'Home', router: '/', icon: 'home', fa: 'fas'},
         {name: 'Projects', router: '/projects', icon: 'project-diagram', fa: 'fas'},
         {name: 'About', router: '/about', icon: 'project-diagram', fa: 'fas'},
-        {name: 'Skills', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'star', fa: 'fas'},
-        {name: 'Resume', router: '/projects', icon: 'book', fa: 'fas'},
+        {name: 'Skills', router: '/skills', icon: 'star', fa: 'fas'},
+        {name: 'Resume', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'book', fa: 'fas'},
         {name: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'address-book', fa: 'fas'},
         {name: 'Github', router: '/https://github.com/Minaparnian', icon: 'github-alt', fa: 'fab'}
       ]
-
     }
   }
 }
