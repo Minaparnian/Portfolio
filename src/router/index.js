@@ -3,17 +3,12 @@ import Router from 'vue-router'
 import Nav from '@/components/nav'
 import Homepage from '@/pages/homepage'
 import Projects from '@/pages/project'
+import About from '@/pages/about'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/nav',
-      name: 'nav',
-      component: Nav
-    },
-
     {
       path: '/',
       name: 'Homepage',
@@ -24,6 +19,12 @@ export default new Router({
       path: '/projects',
       name: 'Projects',
       component: Projects
+    },
+
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     }
   ]
 })

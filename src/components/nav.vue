@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hero-head">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
@@ -28,7 +28,6 @@
     </nav>
   </div>
 </template>
-
 <script>
 export default {
   name: '',
@@ -43,7 +42,6 @@ export default {
         {name: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'address-book', fa: 'fas'},
         {name: 'Github', router: '/https://github.com/Minaparnian', icon: 'github-alt', fa: 'fab'}
       ]
-
     }
   }
 }
