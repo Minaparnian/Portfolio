@@ -1,5 +1,4 @@
 <template>
-  <div class="hero-head">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
@@ -14,10 +13,12 @@
         </div>
         <div :class="['navbar-menu',{'is-active': display}]" id="navbarMenu">
           <div class="navbar-end">
-            <span class="navbar-item" v-for="item in navbar" :key="item">
+            <span class="navbar-item" v-for="(item, key) in navbar" :key="key">
               <router-link class="navbar-item button is-white is-outlined" :to="{path:item.router}">
                   <span class="icon">
-                      <i :class="item.fa +  ' fa-' +  item.icon"></i>
+                      <!-- <i :class="item.fa +  ' fa-' +  item.icon" ></i> -->
+                      <font-awesome-icon v-if="key == 6" :icon="['fab', item.icon]" />
+                      <font-awesome-icon v-else :icon="['fas', item.icon]" />
                   </span>
                   <span v-text="item.name"></span>
               </router-link>
@@ -26,20 +27,19 @@
         </div>
       </div>
     </nav>
-  </div>
 </template>
 <script>
 export default {
   name: '',
   data: () => ({
     navbar: [
-      {name: 'Home', router: '/', icon: 'home', fa: 'fas'},
-      {name: 'Projects', router: '/projects', icon: 'project-diagram', fa: 'fas'},
-      {name: 'About', router: '/about', icon: 'project-diagram', fa: 'fas'},
-      {name: 'Skills', router: '/skills', icon: 'star', fa: 'fas'},
-      {name: 'Resume', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'book', fa: 'fas'},
-      {name: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'address-book', fa: 'fas'},
-      {name: 'Github', router: '/https://github.com/Minaparnian', icon: 'github-alt', fa: 'fab'}
+      {name: '1', origin: 'Home', router: '/', icon: 'home', fa: 'fas'},
+      {name: '2', origin: 'Projects', router: '/projects', icon: 'project-diagram', fa: 'fas'},
+      {name: '3', origin: 'About', router: '/about', icon: 'project-diagram', fa: 'fas'},
+      {name: '4', origin: 'Skills', router: '/skills', icon: 'star', fa: 'fas'},
+      {name: '5', origin: 'Resume', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'book', fa: 'fas'},
+      {name: '6', origin: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'address-book', fa: 'fas'},
+      {name: '7', origin: 'Github', router: '/https://github.com/Minaparnian', icon: 'github', fa: 'fab'}
     ],
     display: false
   })
@@ -47,5 +47,22 @@ export default {
 </script>
 
 <style>
+
+.hero.is-info .navbar-menu {
+  background-color: transparent;
+}
+
+/* .navbar-menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 0;
+  padding-top: 50px;
+} */
 
 </style>

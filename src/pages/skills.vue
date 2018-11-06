@@ -1,10 +1,8 @@
 <template name="Chart">
-  <div class="hero-body">
-    <div class="container is-centered">
-      <div class="columns is-centered">
-        <div class="column is-narrow">
-          <canvas ref="graphInvestments" style="width: 100% !important; height: 350px"></canvas>
-        </div>
+  <div class="container is-centered">
+    <div class="columns is-centered">
+      <div class="column is-narrow">
+        <canvas ref="graphInvestments" style="width: 100% !important; height: 350px"></canvas>
       </div>
     </div>
   </div>

@@ -1,11 +1,9 @@
 <template>
-  <div class="hero-body">
     <div class="container has-text-centered">
       <div class="column is-6 is-offset-3">
         About Coming Soon
       </div>
     </div>
-  </div>
 </template>
 
 <script>

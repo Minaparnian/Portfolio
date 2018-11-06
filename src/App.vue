@@ -2,7 +2,9 @@
   <div id="app">
     <div class="hero is-info is-fullheight">
       <navSection></navSection>
-      <router-view></router-view>
+        <div class="hero-body">
+          <router-view></router-view>
+        </div>
     </div>
     <div class="hero-foot">
       <footerSection>hello</footerSection>
@@ -13,6 +15,7 @@
 <script>
 import navSection from '@/components/nav'
 import footerSection from '@/components/footer'
+import './assets/sass/styles.scss'
 export default {
   name: 'App',
   components: {navSection, footerSection}
@@ -27,7 +30,6 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
 .is-info {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/wse-top-banner.jpg) no-repeat center center fixed;
   background-size: cover;
