@@ -49,11 +49,21 @@ export default {
       },
       options: {
         maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+        tooltips: {
+          callbacks: {
+            label: function (tooltipItem) {
+              return tooltipItem.yLabel
+            }
+          }
+        },
         scales: {
           yAxes: [{
             stacked: true,
             gridLines: {
-              display: true,
+              display: false,
               color: 'rgba(255,99,132,0.2)'
             }
           }],
