@@ -52,6 +52,10 @@ export default {
   background-color: transparent;
 }
 
+.navbar-burger {
+  color: #fff;
+}
+
 /* .navbar-menu {
   height: 100%;
   width: 250px;
