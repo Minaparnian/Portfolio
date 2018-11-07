@@ -32,5 +32,9 @@ export default new Router({
       name: 'Skills',
       component: Skills
     }
-  ]
+  ],
+  linkActiveClass: 'is-active',
+  linkExactActiveClass: 'is-active',
+  // to add normall url instead of hashtag between
+  mode: 'history'
 })

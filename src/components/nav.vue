@@ -39,7 +39,7 @@ export default {
       {name: '4', origin: 'Skills', router: '/skills', icon: 'star'},
       {name: '5', origin: 'Resume', router: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'file-alt'},
       {name: '6', origin: 'Contacts', router: 'https://github.com/Minaparnian', icon: 'envelope'},
-      {name: '7', origin: 'Github', router: '/https://github.com/Minaparnian', icon: 'github'}
+      {name: '7', origin: 'Github', router: '/https://github.com/Minaparnian', icon: 'github-alt'}
     ],
     display: false
   })
