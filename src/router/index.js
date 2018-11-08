@@ -4,6 +4,7 @@ import Homepage from '@/pages/homepage'
 import Projects from '@/pages/project'
 import About from '@/pages/about'
 import Skills from '@/pages/skills'
+import DataBase from '@/pages/database'
 
 Vue.use(Router)
 
@@ -31,6 +32,12 @@ export default new Router({
       path: '/skills',
       name: 'Skills',
       component: Skills
+    },
+
+    {
+      path: '/database',
+      name: 'DataBase',
+      component: DataBase
     }
   ],
   linkExactActiveClass: 'is-active',

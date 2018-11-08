@@ -52,35 +52,22 @@
               <div class="column is-1"><a href="https://github.com/Minaparnian" target="_blank"><img class="social-link" src="static/github.png" alt="Github"></a></div>
               <div class="column is-1"><a href="tel:61420646053" target="_blank"><img class="social-link" src="static/Phone-Download-PNG.png" alt="Phone"></a></div>
             </div>
-
-            <div class="columns">
-              <div class="column is-4" v-for="(contact, key) in contacts" :key="key">
-                <h1 v-text="contact.name"></h1>
-                <h1 v-text="contact.email"></h1>
-                <h1 v-text="contact.message"></h1>
-              </div>
-            </div>
-
           </div>
         </footer>
     </div>
 </template>
 
 <script>
-import { mapMutations, mapState } from 'vuex'
+import { mapMutations } from 'vuex'
 export default {
-  name: '',
+  name: 'Footer',
   data: () => ({
     newName: '',
     newEmail: '',
     newMessage: '',
     msg: ''
   }),
-  computed: {
-    ...mapState([
-      'contacts'
-    ])
-  },
+
   methods: {
     ...mapMutations([
       'ADD_CONTACT'
