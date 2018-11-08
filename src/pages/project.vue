@@ -36,18 +36,17 @@
 </template>
 
 <script>
+// helpers for vuex
+import { mapState } from 'vuex'
 export default {
   name: 'projects',
   data: () => ({
-    projects: [
-      {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut'},
-      {title: 'Adventurous', img: 'static/dit-lp.jpg', previewLink: 'https://dry-mesa-99000.herokuapp.com/', githubLink: 'https://github.com/Minaparnian/Adventurous'},
-      {title: 'Tic-Tac-Toe', img: 'static/dit-lp.jpg', previewLink: 'https://minaparnian.github.io/tictactoe/', githubLink: 'https://github.com/Minaparnian/tictact'},
-      {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut'},
-      {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut'},
-      {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut'}
-    ]
-  })
+  }),
+  computed: {
+    ...mapState([
+      'projects'
+    ])
+  }
 }
 </script>
 
