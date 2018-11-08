@@ -41,6 +41,7 @@
                           <font-awesome-icon  icon="envelope" />
                         </span>
                         <span>Submit</span></button>
+                        <h1 v-text="msg"></h1>
                     </div>
                   </div>
                 </div>
@@ -72,7 +73,8 @@ export default {
   data: () => ({
     newName: '',
     newEmail: '',
-    newMessage: ''
+    newMessage: '',
+    msg: ''
   }),
   computed: {
     ...mapState([
@@ -88,6 +90,11 @@ export default {
       this.newName = ''
       this.newEmail = ''
       this.newMessage = ''
+    },
+    sendmessage () {
+      this.addContact().then(() => {
+        this.msg = 'Successfully send'
+      })
     }
   }
 }
