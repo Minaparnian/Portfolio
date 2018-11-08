@@ -41,7 +41,7 @@
                           <font-awesome-icon  icon="envelope" />
                         </span>
                         <span>Submit</span></button>
-                        <h1 v-text="msg"></h1>
+                        <h1 class="msg" v-text="msg"></h1>
                     </div>
                   </div>
                 </div>
@@ -77,11 +77,7 @@ export default {
       this.newName = ''
       this.newEmail = ''
       this.newMessage = ''
-    },
-    sendmessage () {
-      this.addContact().then(() => {
-        this.msg = 'Successfully send'
-      })
+      this.msg = 'Successfully send'
     }
   }
 }
@@ -95,5 +91,8 @@ export default {
 .social-link:hover {
   opacity: .2;
 }
-
+.msg {
+  margin-top: 20px;
+  color: #68cfad;
+}
 </style>

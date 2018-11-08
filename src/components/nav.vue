@@ -39,11 +39,11 @@ export default {
   name: '',
   data: () => ({
     navbar: [
-      {name: '1', origin: 'Home', router: '/', icon: 'home'},
-      {name: '2', origin: 'Projects', router: '/projects', icon: 'project-diagram'},
-      {name: '3', origin: 'About', router: '/about', icon: 'info'},
-      {name: '4', origin: 'Skills', router: '/skills', icon: 'star'},
-      {name: '8', origin: 'DataBase', router: '/database', icon: 'project-diagram'},
+      {name: '0', origin: 'Home', router: '/', icon: 'home'},
+      {name: '1', origin: 'Projects', router: '/projects', icon: 'project-diagram'},
+      {name: '2', origin: 'About', router: '/about', icon: 'info'},
+      {name: '3', origin: 'Skills', router: '/skills', icon: 'star'},
+      {name: '4', origin: 'DataBase', router: '/database', icon: 'project-diagram'},
       {name: '5', origin: 'Resume', link: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'file-alt'},
       {name: '6', origin: 'Contacts', link: 'https://github.com/Minaparnian', icon: 'envelope'},
       {name: '7', origin: 'Github', link: 'https://github.com/Minaparnian', icon: 'github-alt'}
