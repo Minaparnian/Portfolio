@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar">
+    <nav class="navbar is-dark">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="../">
@@ -11,7 +11,7 @@
               <span></span>
           </span>
         </div>
-        <div :class="['navbar-menu',{'is-active': display}]" id="navbarMenu">
+        <div :class="['navbar-menu',{'is-active Navbar-menu': display}]" id="navbarMenu">
           <div class="navbar-end">
             <span class="navbar-item" v-for="(item, key) in navbar" :key="key">
               <router-link v-if="key <= 4" class="navbar-item button is-white is-outlined" :to="{path:item.router}">
@@ -64,7 +64,7 @@ export default {
   color: #fff;
 }
 
-/* .navbar-menu {
+.Navbar-menu {
   height: 100%;
   width: 250px;
   position: fixed;
@@ -75,6 +75,6 @@ export default {
   transition: 0.5s;
   padding: 0;
   padding-top: 50px;
-} */
+}
 
 </style>
