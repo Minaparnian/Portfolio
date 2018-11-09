@@ -6,6 +6,7 @@
           <th>Name</th>
           <th>Email</th>
           <th>Message</th>
+          <th>Date</th>
         </tr>
       </thead>
       <tbody v-for="(contact, key) in contacts" :key="key">
@@ -13,6 +14,7 @@
           <td v-text="contact.name"></td>
           <td v-text="contact.email"></td>
           <td v-text="contact.message"></td>
+          <td v-text="contact.date"></td>
         </tr>
       </tbody>
     </div>
