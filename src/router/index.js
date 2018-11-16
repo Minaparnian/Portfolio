@@ -42,6 +42,13 @@ export default new Router({
       component: DataBase
     }
   ],
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash === '#contacts') {
+      return {
+        selector: to.hash
+      }
+    }
+  },
   linkExactActiveClass: 'is-active',
   // to add normall url instead of hashtag between
   mode: 'history'

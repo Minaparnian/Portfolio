@@ -7,8 +7,7 @@
               <h4 class="subtitle is-5">Feel free to get in touch - I'd love to hear from you</h4>
             </div>
             <br>
-
-            <div class="columns">
+            <!-- <div class="columns">
               <div class="column is-6 is-offset-3">
                 <div class="box">
                   <div class="field">
@@ -46,11 +45,12 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="columns is-centered">
+            </div> -->
+            <div class="columns is-centered" id="contacts">
               <div class="column is-1"><a href="https://www.linkedin.com/in/mina-parnian/" target="_blank"><img class="social-link" src="static/Linkedin.png" alt="LinkedIn"></a></div>
               <div class="column is-1"><a href="https://github.com/Minaparnian" target="_blank"><img class="social-link" src="static/github.png" alt="Github"></a></div>
               <div class="column is-1"><a href="tel:61420646053" target="_blank"><img class="social-link" src="static/Phone-Download-PNG.png" alt="Phone"></a></div>
+              <div class="column is-1"><a href="mailto:minaparnian66@gmail.com"><img class="social-link" src="static/email-logo-black.png" alt="email"></a></div>
             </div>
           </div>
         </footer>
