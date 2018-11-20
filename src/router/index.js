@@ -45,7 +45,9 @@ export default new Router({
   scrollBehavior (to, from, savedPosition) {
     if (to.hash === '#contacts') {
       return {
-        selector: to.hash
+        selector: to.hash,
+        offset: { x: 0, y: 10 },
+        behavior: 'smooth'
       }
     }
   },

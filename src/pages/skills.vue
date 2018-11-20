@@ -24,7 +24,7 @@ export default {
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['HTML5', 'CSS3', 'Javascript/Jquery', 'Vue Js / Vuex', 'Purple', 'Orange'],
         datasets: [{
           label: '# of Votes',
           data: [12, 19, 3, 5, 2, 3],
