@@ -14,7 +14,8 @@ export default new Router({
     {
       path: '/',
       name: 'Homepage',
-      component: Homepage
+      component: Homepage,
+      meta: {background: 'static/wse-top-banner.jpg'}
     },
     {
       path: '/projects',
