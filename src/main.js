@@ -7,10 +7,13 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faInfo, faHome, faStar, faBook, faAddressBook, faProjectDiagram, faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import VueTyperPlugin from 'vue-typer'
 
 library.add([ faInfo, faHome, faStar, faBook, faAddressBook, faProjectDiagram, faGithubAlt, faFileAlt, faEnvelope ])
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+Vue.use(VueTyperPlugin)
 
 Vue.config.productionTip = false
 

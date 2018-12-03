@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="hero-body has-grey-background" id="contacts">
+    <footer class="hero-body has-white-background" id="contacts">
       <div class="container">
         <div class="section-heading">
           <h3 class="title is-2">Let's get in touch</h3>

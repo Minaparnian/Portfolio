@@ -3,7 +3,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="../">
-              <img src="static/Equitise_white_Transparent_Small400px.png" alt="Logo">
+              <h1 class="is-size-3 has-text-weight-bold">MINAP</h1>
           </a>
           <span @click="display = !display" :class="['navbar-burger burger', {'is-active' : display }]" data-target="navbarMenu">
               <span></span>

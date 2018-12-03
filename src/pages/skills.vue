@@ -24,17 +24,17 @@ export default {
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['HTML5', 'CSS3', 'Javascript/Jquery', 'Vue Js / Vuex', 'Purple', 'Orange'],
+        labels: ['HTML5', 'CSS3', 'Javascript/Jquery', 'Vue Js / Vuex', 'React', 'PHP'],
         datasets: [{
           label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          data: [19, 19, 15, 17, 12, 10],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+            'rgb(255, 206, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(153, 102, 255)',
+            'rgb(255, 159, 64)'
           ],
           borderColor: [
             'rgba(255,99,132,1)',
@@ -50,7 +50,8 @@ export default {
       options: {
         maintainAspectRatio: false,
         legend: {
-          display: false
+          fontColor: '#fff',
+          fontSize: 18
         },
         tooltips: {
           callbacks: {
@@ -62,14 +63,26 @@ export default {
         scales: {
           yAxes: [{
             stacked: true,
+            ticks: {
+              fontColor: '#6c6a6b',
+              fontSize: 18,
+              stepSize: 1,
+              beginAtZero: true
+            },
             gridLines: {
               display: false,
-              color: 'rgba(255,99,132,0.2)'
+              color: '#fff'
             }
           }],
           xAxes: [{
             gridLines: {
               display: false
+            },
+            ticks: {
+              fontColor: '#fff',
+              fontSize: 14,
+              stepSize: 1,
+              beginAtZero: true
             }
           }]
         }
