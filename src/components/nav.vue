@@ -39,14 +39,14 @@ export default {
   name: '',
   data: () => ({
     navbar: [
-      {name: '0', origin: 'Home', router: '/', icon: 'home'},
-      {name: '1', origin: 'Projects', router: '/projects', icon: 'project-diagram'},
-      {name: '2', origin: 'About', router: '/about', icon: 'info'},
-      {name: '3', origin: 'Skills', router: '/skills', icon: 'star'},
-      {name: '4', origin: 'DataBase', router: '/database', icon: 'project-diagram'},
-      {name: '5', origin: 'Resume', link: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'file-alt'},
-      {name: '6', origin: 'Contacts', link: '/#contacts', icon: 'envelope'},
-      {name: '7', origin: 'Github', link: 'https://github.com/Minaparnian', icon: 'github-alt'}
+      {name: 'Home', origin: 'Home', router: '/', icon: 'home'},
+      {name: 'Projects', origin: 'Projects', router: '/projects', icon: 'project-diagram'},
+      {name: 'About', origin: 'About', router: '/about', icon: 'info'},
+      {name: 'Skills', origin: 'Skills', router: '/skills', icon: 'star'},
+      // {name: 'DataBase', origin: 'DataBase', router: '/database', icon: 'project-diagram'},
+      {name: 'Resume', origin: 'Resume', link: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'file-alt'},
+      {name: 'Contacts', origin: 'Contacts', link: '/#contacts', icon: 'envelope'},
+      {name: 'Github', origin: 'Github', link: 'https://github.com/Minaparnian', icon: 'github-alt'}
 
     ],
     display: false

@@ -1,13 +1,5 @@
 <template>
     <div class="container has-text-centered">
-        <div class="column is-6 is-offset-3">
-            <h1 class="title">
-                Ppp Coming Soon
-            </h1>
-            <h2 class="subtitle">
-                $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
-            </h2>
-        </div>
         <div class="container portfolio-container">
         <div class="columns is-multiline">
           <div class="column is-4" v-for="(project, key) in projects" :key="key">

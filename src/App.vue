@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="is-default-bg">
-    <div class="hero is-fullheight" :style="'background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(' + ($route.meta.background) + ') no-repeat center center; background-size: cover'">
+    <div class="hero is-fullheight is-cover" :style="'background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(' + ($route.meta.background) + ') no-repeat center center; background-size: cover'">
       <navSection></navSection>
         <div class="hero-body">
           <transition
@@ -35,6 +35,11 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+.is-cover {
+  background-size: cover;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.3s;
