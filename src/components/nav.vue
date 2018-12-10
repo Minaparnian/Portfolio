@@ -1,9 +1,9 @@
 <template>
-    <nav class="navbar is-dark">
+    <nav class="navbar is-black">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="../">
-              <h1 class="is-size-3 has-text-weight-bold">MINAP</h1>
+              <h1 class="is-size-3 has-text-weight-bold"><span style="color:#e31b6d">MINA</span>P</h1>
           </a>
           <span @click="display = !display" :class="['navbar-burger burger', {'is-active' : display }]" data-target="navbarMenu">
               <span></span>
@@ -16,14 +16,14 @@
             <span class="navbar-item" v-for="(item, key) in navbar" :key="key">
               <router-link v-if="key <= 4" class="navbar-item button is-white is-outlined" :to="{path:item.router}">
                   <span class="icon">
-                      <font-awesome-icon v-if="key == 7" :icon="['fab', item.icon]" />
+                      <font-awesome-icon v-if="key == 6" :icon="['fab', item.icon]" />
                       <font-awesome-icon v-else :icon="['fas', item.icon]" />
                   </span>
                   <span v-text="item.name"></span>
               </router-link>
               <a v-if="key > 4"  class="navbar-item button is-white is-outlined" :href="item.link">
                 <span class="icon">
-                    <font-awesome-icon v-if="key == 7" :icon="['fab', item.icon]" />
+                    <font-awesome-icon v-if="key == 6" :icon="['fab', item.icon]" />
                     <font-awesome-icon v-else :icon="['fas', item.icon]" />
                 </span>
                 <span v-text="item.name"></span>

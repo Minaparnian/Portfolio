@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="is-default-bg">
-    <div class="hero is-fullheight is-cover" :style="'background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(' + ($route.meta.background) + ') no-repeat center center; background-size: cover'">
-      <navSection></navSection>
+    <navSection></navSection>
+    <div class="hero is-fullheight is-cover" :style="'background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(' + ($route.meta.background) + '); background-size: cover;background-position:center; background-repeat: no-repeat;'">
         <div class="hero-body">
           <transition
             name="fade"
