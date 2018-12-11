@@ -2,7 +2,7 @@
     <nav class="navbar is-black">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="../">
+          <a class="navbar-item" href="/">
               <h1 class="is-size-3 has-text-weight-bold"><span style="color:#e31b6d">MINA</span>P</h1>
           </a>
           <span @click="display = !display" :class="['navbar-burger burger', {'is-active' : display }]" data-target="navbarMenu">
@@ -75,6 +75,7 @@ export default {
   transition: 0.5s;
   padding: 0;
   padding-top: 50px;
+  background-color: #000;
 }
 
 </style>
