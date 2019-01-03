@@ -14,14 +14,14 @@
         <div :class="['navbar-menu',{'is-active Navbar-menu': display}]" id="navbarMenu">
           <div class="navbar-end">
             <span class="navbar-item" v-for="(item, key) in navbar" :key="key">
-              <router-link v-if="key <= 4" class="navbar-item button is-white is-outlined" :to="{path:item.router}">
+              <router-link v-if="key <= 3" class="navbar-item button is-white is-outlined" :to="{path:item.router}">
                   <span class="icon">
                       <font-awesome-icon v-if="key == 6" :icon="['fab', item.icon]" />
                       <font-awesome-icon v-else :icon="['fas', item.icon]" />
                   </span>
                   <span v-text="item.name"></span>
               </router-link>
-              <a v-if="key > 4"  class="navbar-item button is-white is-outlined" :href="item.link">
+              <a v-if="key > 3"  class="navbar-item button is-white is-outlined" :href="item.link">
                 <span class="icon">
                     <font-awesome-icon v-if="key == 6" :icon="['fab', item.icon]" />
                     <font-awesome-icon v-else :icon="['fas', item.icon]" />

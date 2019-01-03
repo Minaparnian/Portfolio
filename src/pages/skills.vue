@@ -28,16 +28,24 @@ export default {
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['HTML5', 'CSS3', 'Javascript/Jquery', 'Vue Js / Vuex', 'React', 'PHP'],
+        labels: ['HTML5', 'CSS3', 'Bootstrap/ Bulma', 'Javascript/Jquery', 'Vue Js / Vuex', 'React', 'Ruby on Rails', 'PHP', 'MySql', 'Node.js', 'Git/Github', 'Sourcetree/ Bitbucket', 'Photoshop, illustrator & Indesign', 'Zeplin, Sketch'],
         datasets: [{
           label: '# of Votes',
-          data: [19, 19, 15, 17, 12, 10],
+          data: [20, 20, 20, 17, 15, 10, 15, 15, 15, 15, 19, 20, 20, 20],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)',
             'rgb(255, 206, 86)',
             'rgb(75, 192, 192)',
             'rgb(153, 102, 255)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+            'rgb(255, 206, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(153, 102, 255)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 99, 132)',
             'rgb(255, 159, 64)'
           ],
           borderColor: [
@@ -46,7 +54,15 @@ export default {
             'rgba(255, 206, 86, 1)',
             'rgba(75, 192, 192, 1)',
             'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
+            'rgba(255, 159, 64, 1)',
+            'rgba(255, 99, 132)',
+            'rgba(54, 162, 235)',
+            'rgba(255, 206, 86)',
+            'rgba(75, 192, 192)',
+            'rgba(153, 102, 255)',
+            'rgba(255, 159, 64)',
+            'rgba(255, 99, 132)',
+            'rgba(255, 159, 64)'
           ],
           borderWidth: 1
         }]
