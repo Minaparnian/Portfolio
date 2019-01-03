@@ -72,8 +72,7 @@ export default {
       options: {
         maintainAspectRatio: false,
         legend: {
-          fontColor: '#fff',
-          fontSize: 18
+          display: false
         },
         tooltips: {
           callbacks: {
@@ -104,7 +103,8 @@ export default {
               fontColor: '#fff',
               fontSize: 14,
               stepSize: 1,
-              beginAtZero: true
+              beginAtZero: true,
+              autoSkip: false
             }
           }]
         }

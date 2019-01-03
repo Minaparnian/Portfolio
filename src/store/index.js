@@ -6,10 +6,10 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     projects: [
-      {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut', id: 1},
-      {title: 'Adventurous', img: 'static/dit-lp.jpg', previewLink: 'https://dry-mesa-99000.herokuapp.com/', githubLink: 'https://github.com/Minaparnian/Adventurous', id: 2},
-      {title: 'Tic-Tac-Toe', img: 'static/dit-lp.jpg', previewLink: 'https://minaparnian.github.io/tictactoe/', githubLink: 'https://github.com/Minaparnian/tictact', id: 3},
-      {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut', id: 4},
+      {title: 'ChillOut', img: 'static/chill-out.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut', id: 1},
+      {title: 'Hi-Tech hunt', img: 'static/hi-tech-hunt.jpg', previewLink: 'https://hi-tech-hunt.herokuapp.com', githubLink: 'https://github.com/Minaparnian/Hi-Tech-hunt', id: 2},
+      {title: 'Adventurous', img: 'static/adventurous.jpg', previewLink: 'https://dry-mesa-99000.herokuapp.com', githubLink: 'https://github.com/Minaparnian/Adventurous', id: 3},
+      {title: 'Tic-Tac-Toe', img: 'static/tic-tac-toe.jpg', previewLink: 'https://minaparnian.github.io/tictactoe', githubLink: 'https://github.com/Minaparnian/tictact', id: 4},
       {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut', id: 5},
       {title: 'ChillOut', img: 'static/dit-lp.jpg', previewLink: 'https://chillout-app.herokuapp.com', githubLink: 'https://github.com/Minaparnian/chillOut', id: 6}
     ],
