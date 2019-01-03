@@ -1,28 +1,32 @@
 <template>
   <div class="hero is-fullheight is-cover">
-    <div class="hero-body">
+    <div style="margin-top:100px">
       <div class="container has-text-centered">
         <div class="portfolio-container">
-          <carousel :per-page="1">
+          <carousel  :paginationActiveColor="'#e31b6d'" :perPageCustom="[[320, 1], [1199, 2]]">
               <slide v-for="(project, key) in projects" :key="key">
-                <router-link :to="{ name: 'Modal', params: {id: project.title, project: project.title } }">
-                  <div class="card">
-                    <header class="card-header">
-                      <p class="card-header-title">
-                        <span v-text="project.title"></span>
-                      </p>
-                    </header>
-                    <div class="card-content">
-                      <figure class="image">
-                        <img :src="project.img" alt="modal-cards template screenshot">
-                      </figure>
+                <div class="columns  is-centered">
+                  <div class="column is-10">
+                    <div class="card">
+                      <router-link :to="{ name: 'Modal', params: {id: project.title, project: project.title } }">
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            <span v-text="project.title"></span>
+                          </p>
+                        </header>
+                        <div class="card-content">
+                          <figure class="image">
+                            <img :src="project.img" alt="modal-cards template screenshot">
+                          </figure>
+                        </div>
+                      </router-link>
+                      <footer class="card-footer">
+                        <a target="_blank" :href="project.previewLink" class="card-footer-item">Preview</a>
+                        <a target="_blank" :href="project.githubLink" class="card-footer-item">Source Code</a>
+                      </footer>
                     </div>
-                    <footer class="card-footer">
-                      <a :href="project.previewLink" class="card-footer-item">Preview</a>
-                      <a :href="project.githubLink" class="card-footer-item">Source Code</a>
-                    </footer>
                   </div>
-                </router-link>
+                </div>
               </slide>
           </carousel>
         </div>
