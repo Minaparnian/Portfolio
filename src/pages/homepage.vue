@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="hero is-fullheight is-cover" :style="'background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/blue-bright-honeycomb-pattern-1920x1200-digital-art-desktop-wallpaper-25192.jpg); background-size: cover;background-position:center center; background-repeat: no-repeat;'">
+    <div class="hero is-fullheight is-cover" :style="'background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/image-2.jpg); background-size: cover;background-position:center bottom; background-repeat: no-repeat;'">
       <div class="hero-body is-fullheight">
         <div class="container has-text-centered">
-            <div class="column is-6 is-offset-3">
+            <div class="column is-6">
               <h1 class="has-text-white is-size-5">I'm <span style="color:#e31b6d">Mina Parnian</span>.</h1>
               <vue-typer :repeat='0' text='Front End Developer'></vue-typer>
               <h1 class="has-text-white is-size-5">Creator | Coder | Web developer</h1>

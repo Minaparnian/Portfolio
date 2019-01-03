@@ -8,12 +8,13 @@ import { faInfo, faHome, faStar, faBook, faAddressBook, faProjectDiagram, faFile
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueTyperPlugin from 'vue-typer'
+import VueCarousel from 'vue-carousel'
 
 library.add([ faInfo, faHome, faStar, faBook, faAddressBook, faProjectDiagram, faGithubAlt, faFileAlt, faEnvelope ])
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-Vue.use(VueTyperPlugin)
+Vue.use(VueTyperPlugin, VueCarousel)
 
 Vue.config.productionTip = false
 

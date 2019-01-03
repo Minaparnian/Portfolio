@@ -2,9 +2,9 @@
     <nav class="navbar is-black">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-              <h1 class="is-size-3 has-text-weight-bold"><span style="color:#e31b6d">MINA</span>P</h1>
-          </a>
+          <router-link to="/">
+              <h1 class="navbar-item is-size-3 has-text-weight-bold has-text-white"><span style="color:#e31b6d">MINA</span>P</h1>
+          </router-link>
           <span @click="display = !display" :class="['navbar-burger burger', {'is-active' : display }]" data-target="navbarMenu">
               <span></span>
               <span></span>
