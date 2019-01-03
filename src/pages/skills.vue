@@ -30,7 +30,7 @@ export default {
       data: {
         labels: ['HTML5', 'CSS3', 'Bootstrap/ Bulma', 'Javascript/Jquery', 'Vue Js / Vuex', 'React', 'Ruby on Rails', 'PHP', 'MySql', 'Firebase', 'Node.js', 'Git/Github', 'Sourcetree/ Bitbucket', 'Photoshop, illustrator & Indesign', 'Zeplin, Sketch'],
         datasets: [{
-          label: '# of Votes',
+          label: 'My Skills',
           data: [20, 20, 20, 17, 15, 10, 15, 15, 15, 12, 15, 19, 20, 20, 20],
           backgroundColor: [
             'rgb(255, 99, 132)',
@@ -72,8 +72,7 @@ export default {
       options: {
         maintainAspectRatio: false,
         legend: {
-          fontColor: '#fff',
-          fontSize: 18
+          display: false
         },
         tooltips: {
           callbacks: {
@@ -104,7 +103,8 @@ export default {
               fontColor: '#fff',
               fontSize: 14,
               stepSize: 1,
-              beginAtZero: true
+              beginAtZero: true,
+              autoSkip: false
             }
           }]
         }
