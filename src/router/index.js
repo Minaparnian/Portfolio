@@ -15,7 +15,7 @@ export default new Router({
       path: '/',
       name: 'Homepage',
       component: Homepage,
-      meta: {background: 'static/blue-bright-honeycomb-pattern-1920x1200-digital-art-desktop-wallpaper-25192.jpg'}
+      meta: {background: '/static/image-2.jpg'}
     },
     {
       path: '/projects',

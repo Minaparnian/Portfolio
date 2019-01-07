@@ -16,14 +16,14 @@
             <span class="navbar-item" v-for="(item, key) in navbar" :key="key">
               <router-link v-if="key <= 3" class="navbar-item button is-white is-outlined" :to="{path:item.router}">
                   <span class="icon">
-                      <font-awesome-icon v-if="key == 6" :icon="['fab', item.icon]" />
+                      <font-awesome-icon v-if="key == 5" :icon="['fab', item.icon]" />
                       <font-awesome-icon v-else :icon="['fas', item.icon]" />
                   </span>
                   <span v-text="item.name"></span>
               </router-link>
-              <a v-if="key > 3"  class="navbar-item button is-white is-outlined" :href="item.link">
+              <a v-if="key > 3" class="navbar-item button is-white is-outlined" :href="item.link" target="_blank">
                 <span class="icon">
-                    <font-awesome-icon v-if="key == 6" :icon="['fab', item.icon]" />
+                    <font-awesome-icon v-if="key == 5" :icon="['fab', item.icon]" />
                     <font-awesome-icon v-else :icon="['fas', item.icon]" />
                 </span>
                 <span v-text="item.name"></span>
@@ -43,9 +43,7 @@ export default {
       {name: 'Projects', origin: 'Projects', router: '/projects', icon: 'project-diagram'},
       {name: 'About', origin: 'About', router: '/about', icon: 'info'},
       {name: 'Skills', origin: 'Skills', router: '/skills', icon: 'star'},
-      // {name: 'DataBase', origin: 'DataBase', router: '/database', icon: 'project-diagram'},
       {name: 'Resume', origin: 'Resume', link: 'https://drive.google.com/file/d/1WJG6qCVdnLnF2eu-s02A4Cd3hto6Fp92/view?usp=sharing', icon: 'file-alt'},
-      {name: 'Contacts', origin: 'Contacts', link: '/#contacts', icon: 'envelope'},
       {name: 'Github', origin: 'Github', link: 'https://github.com/Minaparnian', icon: 'github-alt'}
 
     ],
