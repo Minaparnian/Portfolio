@@ -1,14 +1,12 @@
 <template>
   <div class="hero-body">
     <div class="container has-text-centered">
-        <div class="column is-6">
-          <h1 class="has-text-white is-size-5">I'm <span style="color:#e31b6d">Mina Parnian</span>.</h1>
-          <vue-typer :repeat='0' text='Front End Developer'></vue-typer>
-          <h1 class="has-text-white is-size-5">Creator | Coder | Web developer</h1>
-        </div>
-        <div class="has-background-black">
-          <footerSection></footerSection>
-        </div>
+      <div class="column is-6">
+        <h1 class="has-text-white is-size-5">I'm <span style="color:#e31b6d">Mina Parnian</span>.</h1>
+        <vue-typer :repeat='0' text='Front End Developer'></vue-typer>
+        <h1 class="has-text-white is-size-5 is-margin-bt-20">Creator | Coder | Web developer</h1>
+        <footerSection></footerSection>
+      </div>
     </div>
   </div>
 </template>

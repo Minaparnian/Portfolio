@@ -1,15 +1,9 @@
 <template>
-  <div>
-    <footer id="contacts">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-1"><a href="https://www.linkedin.com/in/mina-parnian/" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'linkedin']" /></a></div>
-          <div class="column is-1"><a href="https://github.com/Minaparnian" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'github-alt']"/></a></div>
-          <div class="column is-1"><a href="tel:61420646053" target="_blank"><font-awesome-icon class="has-text-light" icon="phone" /></a></div>
-          <div class="column is-1"><a href="mailto:minaparnian66@gmail.com"><font-awesome-icon class="has-text-light" icon="envelope" /></a></div>
-        </div>
-      </div>
-    </footer>
+  <div class="columns is-centered is-mobile">
+    <div class="column is-1"><a href="https://www.linkedin.com/in/mina-parnian/" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'linkedin']" /></a></div>
+    <div class="column is-1"><a href="https://github.com/Minaparnian" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'github-alt']"/></a></div>
+    <div class="column is-1"><a href="tel:61420646053" target="_blank"><font-awesome-icon class="has-text-light" icon="phone" /></a></div>
+    <div class="column is-1"><a href="mailto:minaparnian66@gmail.com"><font-awesome-icon class="has-text-light" icon="envelope" /></a></div>
   </div>
 </template>
 
@@ -49,11 +43,5 @@ export default {
 .msg {
   margin-top: 20px;
   color: #68cfad;
-}
-#contacts {
-  position: fixed;
-  width: 100%;
-  bottom: 20px;
-  overflow: hidden;
 }
 </style>
