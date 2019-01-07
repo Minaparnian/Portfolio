@@ -1,23 +1,27 @@
 <template>
-  <div class="hero is-fullheight is-cover">
-    <div class="hero-body">
-      <div class="container ">
-        <div class="columns">
-          <div class="column is-6">
-             <img src="/static/mina-circle.png" alt="">
+  <div class="hero-body">
+    <div class="container ">
+      <div class="columns">
+        <div class="column is-6">
+          <h1 class="has-text-light is-size-1 has-text-center">HELLO!!</h1>
+          <h1 class="has-text-light is-size-5 has-text-center is-margin-bt-20">I'm a front-end developer</h1>
+          <img src="/static/mina-circle.png" alt="">
+          <div style="margin-top:20px" class="columns is-centered">
+            <div class="column is-1"><a href="https://www.linkedin.com/in/mina-parnian/" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'linkedin']" /></a></div>
+            <div class="column is-1"><a href="https://github.com/Minaparnian" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'github-alt']"/></a></div>
+            <div class="column is-1"><a href="tel:61420646053" target="_blank"><font-awesome-icon class="has-text-light" icon="phone" /></a></div>
+            <div class="column is-1"><a href="mailto:minaparnian66@gmail.com"><font-awesome-icon class="has-text-light" icon="envelope" /></a></div>
           </div>
-          <div class="column is-6">
-            <h1 class="has-text-light is-1 has-text-left">I'm a front-end developer, I am constantly working on improving the user experience.
-    I graduated from General Assembly's Web Development Immersive and ever since been completely immersed in the wide world of coding. I also holds a degree in graphic design and has worked as a graphic designer in Australia and oversees.
-    What drew me in coding was the challenge of working at an innovative company that provided me the perfect platform to utilize and develop my skills in both coding and design.
-    When I'm not coding, i do coding for fun! I also love, travelling, swimming and rollerblading.</h1>
-            <div style="margin-top:20px" class="columns is-centered">
-              <div class="column is-1"><a href="https://www.linkedin.com/in/mina-parnian/" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'linkedin']" /></a></div>
-              <div class="column is-1"><a href="https://github.com/Minaparnian" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'github-alt']"/></a></div>
-              <div class="column is-1"><a href="tel:61420646053" target="_blank"><font-awesome-icon class="has-text-light" icon="phone" /></a></div>
-              <div class="column is-1"><a href="mailto:minaparnian66@gmail.com"><font-awesome-icon class="has-text-light" icon="envelope" /></a></div>
-            </div>
-          </div>
+        </div>
+        <div class="column is-6">
+          <h1 class="has-text-light is-size-4 has-text-left is-margin-bt-20">A bit about me</h1>
+          <h1 class="has-text-light is-1 has-text-left is-margin-bt-20">I'm a Sydney-based Front End developer graduated from General Assembly's Web Development Immersive where I got to submerge myself in the wide world of coding. I hold a degree in Graphic design and have previously worked as a graphic designer. I am on the lookout for a front-end role, for an innovative company, where I can fuse my passion for coding and design. What drew me in coding was the challenge of working at an innovative company that provided me the perfect platform to utilize and develop my skills in both coding and design.</h1>
+          <h1 class="has-text-light is-size-4 has-text-left is-margin-bt-20">Here are a few quick things about me:</h1>
+          <h1 class="has-text-light is-1 has-text-left">I enjoy solving problems and tackle each problem with gusto and determination</h1>
+          <h1 class="has-text-light is-1 has-text-left">As a programmer, it is your job to put yourself out of business. I believe What you do today can be automated tomorrow</h1>
+          <h1 class="has-text-light is-1 has-text-left">An adventure seeker, I'm an extrovert who is comfortable with a good chat.</h1>
+          <h1 class="has-text-light is-1 has-text-left">My motto is "Success is the result of perfection, hard work, learning from failure, loyalty, and persistence"</h1>
+
         </div>
       </div>
     </div>

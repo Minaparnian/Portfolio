@@ -1,12 +1,10 @@
 <template name="Chart">
-  <div class="hero is-fullheight is-cover">
-    <div class="hero-body">
-      <div class="container is-centered">
-        <div class="columns is-centered">
-          <div class="column is-narrow">
-            <div class="chart-container">
-              <canvas ref="chart"></canvas>
-            </div>
+  <div class="hero-body">
+    <div class="container is-centered">
+      <div class="columns is-centered">
+        <div class="column is-narrow">
+          <div class="chart-container">
+            <canvas ref="chart"></canvas>
           </div>
         </div>
       </div>

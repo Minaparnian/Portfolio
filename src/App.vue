@@ -1,7 +1,11 @@
 <template>
   <div id="app" class="is-default-bg">
-      <navSection></navSection>
-      <router-view></router-view>
+    <section class="hero is-fullheight" :style="'background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(' + ($route.meta.background ? $route.meta.background : '' ) + '); background-size: cover;background-position:center bottom; background-repeat: no-repeat;'">
+      <div class="hero-head">
+          <navSection></navSection>
+      </div>
+          <router-view></router-view>
+    </section>
   </div>
 </template>
 
