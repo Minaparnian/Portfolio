@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-body">
+  <div class="">
     <div class="container has-text-centered">
       <div class="portfolio-container">
         <carousel  :paginationActiveColor="'#e31b6d'" :perPageCustom="[[320, 1], [1199, 2]]">
@@ -54,6 +54,9 @@ export default {
 </script>
 
 <style>
+.portfolio-container {
+  padding: 20px;
+}
 .portfolio-container .card {
   margin-bottom: 2em;
 }
