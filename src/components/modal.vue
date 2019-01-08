@@ -3,9 +3,9 @@
       <div class="modal is-active" @click="$emit('close')">
          <div class="modal-background"></div>
          <div class="modal-content">
-           <div class="box">
+           <div class="box" v-for="project in projects" :key="project.id">
              <slot name="header">
-               This is the default tile!
+               <span v-text="project.title"></span>
              </slot>
              <slot name="body">
                I'm the default body!
