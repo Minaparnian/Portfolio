@@ -6,7 +6,7 @@
             <slide v-for="(project, key) in projects" :key="key">
               <div class="columns  is-centered">
                 <div class="column is-10">
-                  <div class="card">
+                  <div class="card" @click="showModal = true">
                     <router-link :to="{ name: 'Modal', params: {id: project.title, project: project.title } }">
                       <header class="card-header">
                         <p class="card-header-title">
@@ -30,6 +30,7 @@
         </carousel>
       </div>
     </div>
+    <modal v-show="showModal" @close="showModal = false"></modal>
   </div>
 </template>
 
@@ -37,13 +38,16 @@
 // helpers for vuex
 import { mapState } from 'vuex'
 import { Carousel, Slide } from 'vue-carousel'
+import modal from '@/components/modal'
 export default {
   components: {
     Carousel,
-    Slide
+    Slide,
+    modal
   },
   name: 'projects',
   data: () => ({
+    showModal: false
   }),
   computed: {
     ...mapState([
