@@ -4,7 +4,7 @@
       <div class="hero-head">
           <navSection></navSection>
       </div>
-          <router-view></router-view>
+      <router-view></router-view>
     </section>
   </div>
 </template>
