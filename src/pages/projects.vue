@@ -17,11 +17,12 @@
                           <img :src="project.img" alt="modal-cards template screenshot">
                         </figure>
                       </div>
-                    <footer class="card-footer">
-                      <a target="_blank" :href="project.previewLink" class="card-footer-item">Preview</a>
-                      <a target="_blank" :href="project.githubLink" class="card-footer-item">Source Code</a>
-                    </footer>
+                      <footer class="card-footer">
+                        <a target="_blank" :href="project.previewLink" class="card-footer-item">Preview</a>
+                        <a target="_blank" :href="project.githubLink" class="card-footer-item">Source Code</a>
+                      </footer>
                   </div>
+                  <p class="has-text-light" v-text="project.info"></p>
                 </div>
               </div>
             </slide>
