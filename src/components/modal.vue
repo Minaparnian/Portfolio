@@ -4,10 +4,18 @@
          <div class="modal-background"></div>
          <div class="modal-content">
            <div class="box">
-             <p>{{msg}}</p>
+             <slot name="header">
+               This is the default tile!
+             </slot>
+             <slot name="body">
+               I'm the default body!
+             </slot>
+             <slot name="footer">
+               I'm the default footer!
+             </slot>
            </div>
          </div>
-         <button class="modal-close" @click="$emit('close')"></button>
+         <button class="modal-close" @click="close"></button>
        </div>
     </transition>
 </template>
@@ -15,17 +23,20 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'Project',
+  name: 'Modal',
   data () {
     return {
-      project: this.$routes.params.id,
-      msg: 'hello'
     }
   },
   computed: {
     ...mapState([
       'projects'
     ])
+  },
+  methods: {
+    close () {
+      this.$emit('close')
+    }
   }
 }
 </script>

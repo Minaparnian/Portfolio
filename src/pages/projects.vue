@@ -6,8 +6,7 @@
             <slide v-for="(project, key) in projects" :key="key">
               <div class="columns  is-centered">
                 <div class="column is-10">
-                  <div class="card" @click="showModal = true">
-                    <router-link :to="{ name: 'Modal', params: {id: project.title, project: project.title } }">
+                  <div class="card" @click="showModal = true" style="cursor:pointer">
                       <header class="card-header">
                         <p class="card-header-title">
                           <span v-text="project.title"></span>
@@ -18,7 +17,6 @@
                           <img :src="project.img" alt="modal-cards template screenshot">
                         </figure>
                       </div>
-                    </router-link>
                     <footer class="card-footer">
                       <a target="_blank" :href="project.previewLink" class="card-footer-item">Preview</a>
                       <a target="_blank" :href="project.githubLink" class="card-footer-item">Source Code</a>
