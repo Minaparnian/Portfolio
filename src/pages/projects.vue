@@ -4,7 +4,7 @@
       <div class="portfolio-container">
         <carousel  :paginationActiveColor="'#e31b6d'" :perPageCustom="[[320, 1], [1199, 2]]">
             <slide v-for="project in projects" :key="project.id">
-              <div class="columns  is-centered">
+              <div class="columns is-centered">
                 <div class="column is-10">
                   <div class="card" @click="showModal = true" style="cursor:pointer">
                       <header class="card-header">
@@ -28,7 +28,8 @@
         </carousel>
       </div>
     </div>
-    <modal v-show="showModal" @close="showModal = false"></modal>
+    <modal :text="message" v-show="showModal" @close="showModal = false">
+    </modal>
   </div>
 </template>
 
@@ -45,7 +46,8 @@ export default {
   },
   name: 'projects',
   data: () => ({
-    showModal: false
+    showModal: false,
+    message: 'hello'
   }),
   computed: {
     ...mapState([

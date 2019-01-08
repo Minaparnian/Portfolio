@@ -3,15 +3,13 @@
       <div class="modal is-active" @click="$emit('close')">
          <div class="modal-background"></div>
          <div class="modal-content">
-           <div class="box" v-for="project in projects" :key="project.id">
-             <slot name="header">
-               <span v-text="project.title"></span>
+           <div class="box">
+             <slot name="title">
+               {{ text }}
              </slot>
-             <slot name="body">
-               I'm the default body!
+             <slot name="img">
              </slot>
              <slot name="footer">
-               I'm the default footer!
              </slot>
            </div>
          </div>
@@ -21,18 +19,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 export default {
   name: 'Modal',
+  props: ['text'],
   data () {
     return {
-      Selectedprojects: ''
     }
-  },
-  computed: {
-    ...mapState([
-      'projects'
-    ])
   }
 }
 </script>
