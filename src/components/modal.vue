@@ -15,7 +15,7 @@
              </slot>
            </div>
          </div>
-         <button class="modal-close" @click="close"></button>
+         <button class="modal-close" @click="$emit('close')"></button>
        </div>
     </transition>
 </template>
@@ -26,17 +26,13 @@ export default {
   name: 'Modal',
   data () {
     return {
+      Selectedprojects: ''
     }
   },
   computed: {
     ...mapState([
       'projects'
     ])
-  },
-  methods: {
-    close () {
-      this.$emit('close')
-    }
   }
 }
 </script>
