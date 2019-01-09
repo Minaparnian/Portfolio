@@ -5,7 +5,6 @@
          <div class="modal-content">
            <div class="box">
              <slot name="title">
-               {{ text }}
              </slot>
              <slot name="img">
              </slot>
@@ -19,13 +18,20 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   name: 'Modal',
-  props: ['text'],
+  props: ['title'],
   data () {
     return {
     }
+  },
+  methods: {
+    ...mapMutations([
+      'ADD_PROJECT'
+    ])
   }
+
 }
 </script>
 

@@ -9,7 +9,7 @@
                   <div class="card" @click="showModal = true" style="cursor:pointer">
                       <header class="card-header">
                         <p class="card-header-title">
-                          <span v-text="project.title"></span>
+                          <span v-text="project.title" :title="project.title"></span>
                         </p>
                       </header>
                       <div class="card-content">
@@ -29,7 +29,7 @@
         </carousel>
       </div>
     </div>
-    <modal :text="message" v-show="showModal" @close="showModal = false">
+    <modal :title="project" v-show="showModal" @close="showModal = false">
     </modal>
   </div>
 </template>
@@ -48,7 +48,8 @@ export default {
   name: 'projects',
   data: () => ({
     showModal: false,
-    message: 'hello'
+    project: 'hello',
+    title: ''
   }),
   computed: {
     ...mapState([

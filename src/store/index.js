@@ -21,6 +21,9 @@ export default new Vuex.Store({
   mutations: {
     ADD_CONTACT: (state, contact) => {
       state.contacts.push(contact)
+    },
+    ADD_PROJECT: (state, project) => {
+      state.projects.push(project)
     }
   },
   actions: {
