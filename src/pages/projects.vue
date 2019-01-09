@@ -29,7 +29,16 @@
         </carousel>
       </div>
     </div>
-    <modal>
+    <modal  v-show="showModal" @close="showModal = false">
+      <template slot="title">
+        {{ title }}
+      </template>
+      <template slot="info">
+        {{ info }}
+      </template>
+      <template slot="img">
+        <img :src="img" alt="">
+      </template>
     </modal>
   </div>
 </template>
@@ -48,6 +57,10 @@ export default {
   props: ['project'],
   name: 'projects',
   data: () => ({
+    showModal: false,
+    title: '',
+    info: '',
+    img: ''
   }),
   computed: {
     ...mapState([
@@ -57,6 +70,10 @@ export default {
   methods: {
     toggleModal (project) {
       this.$emit('toggleModal', project)
+      this.showModal = true
+      this.title = project.title
+      this.info = project.info
+      this.img = project.img
     }
   }
 }

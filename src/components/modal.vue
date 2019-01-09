@@ -1,17 +1,18 @@
 <template>
     <transition name="modal">
-      <div class="modal" :class="{ 'is-active': active }">
+      <div class="modal is-active" @click="$emit('close')">
          <div class="modal-background"></div>
          <div class="modal-content">
            <div class="box">
-             <h1 class="title" v-text="modal.name"></h1>
-             <slot name="img">
+             <slot name="title">
              </slot>
-             <slot name="footer">
+             <slot name="info">
+             </slot>
+             <slot name="img">
              </slot>
            </div>
          </div>
-         <button class="modal-close" @click.prevent="active = false" aria-label="close"></button>
+         <button class="modal-close" @click="$emit('close')"></button>
        </div>
     </transition>
 </template>
@@ -21,22 +22,8 @@ export default {
   name: 'Modal',
   data () {
     return {
-      active: false,
-      modal: false
     }
-  },
-  methods: {
-    show () {
-      this.active = true
-    }
-  },
-  created () {
-    this.$on('toggleModal', (project) => {
-      this.modal = project
-      this.show()
-    })
   }
-
 }
 </script>
 
