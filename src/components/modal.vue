@@ -1,35 +1,40 @@
 <template>
     <transition name="modal">
-      <div class="modal is-active" @click="$emit('close')">
+      <div class="modal" :class="{ 'is-active': active }">
          <div class="modal-background"></div>
          <div class="modal-content">
            <div class="box">
-             <slot name="title">
-             </slot>
+             <h1 class="title" v-text="modal.name"></h1>
              <slot name="img">
              </slot>
              <slot name="footer">
              </slot>
            </div>
          </div>
-         <button class="modal-close" @click="$emit('close')"></button>
+         <button class="modal-close" @click.prevent="active = false" aria-label="close"></button>
        </div>
     </transition>
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 export default {
   name: 'Modal',
-  props: ['title'],
   data () {
     return {
+      active: false,
+      modal: false
     }
   },
   methods: {
-    ...mapMutations([
-      'ADD_PROJECT'
-    ])
+    show () {
+      this.active = true
+    }
+  },
+  created () {
+    this.$on('toggleModal', (project) => {
+      this.modal = project
+      this.show()
+    })
   }
 
 }

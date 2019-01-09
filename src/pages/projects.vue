@@ -3,13 +3,13 @@
     <div class="container has-text-centered">
       <div class="portfolio-container">
         <carousel  :paginationActiveColor="'#e31b6d'" :perPageCustom="[[320, 1], [1199, 2]]">
-            <slide v-for="project in projects" :key="project.id">
+            <slide v-for="project in projects" :key="project.id" :project="project">
               <div class="columns is-centered">
                 <div class="column is-10">
-                  <div class="card" @click="showModal = true" style="cursor:pointer">
+                  <div class="card" @click="toggleModal(project)" style="cursor:pointer">
                       <header class="card-header">
                         <p class="card-header-title">
-                          <span v-text="project.title" :title="project.title"></span>
+                          <span v-text="project.title"></span>
                         </p>
                       </header>
                       <div class="card-content">
@@ -29,7 +29,7 @@
         </carousel>
       </div>
     </div>
-    <modal :title="project" v-show="showModal" @close="showModal = false">
+    <modal>
     </modal>
   </div>
 </template>
@@ -45,16 +45,19 @@ export default {
     Slide,
     modal
   },
+  props: ['project'],
   name: 'projects',
   data: () => ({
-    showModal: false,
-    project: 'hello',
-    title: ''
   }),
   computed: {
     ...mapState([
       'projects'
     ])
+  },
+  methods: {
+    toggleModal (project) {
+      this.$emit('toggleModal', project)
+    }
   }
 }
 </script>
