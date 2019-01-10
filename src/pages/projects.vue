@@ -8,36 +8,40 @@
                 <div class="column is-10">
                   <div class="card" @click="toggleModal(project)" style="cursor:pointer">
                       <header class="card-header">
-                        <p class="card-header-title">
+                        <p class="card-header-title is-align-center">
                           <span v-text="project.title"></span>
                         </p>
                       </header>
                       <div class="card-content">
                         <figure class="image">
-                          <img :src="project.img" alt="modal-cards template screenshot">
+                          <img :src="project.laptopImg" alt="modal-cards template screenshot">
                         </figure>
                       </div>
                       <footer class="card-footer">
-                        <a target="_blank" :href="project.previewLink" class="card-footer-item">Preview</a>
-                        <a target="_blank" :href="project.githubLink" class="card-footer-item">Source Code</a>
+                        <div @click="toggleModal(project)" class="card-footer-item"><font-awesome-icon class="has-text-dark is-size-2" icon="eye" /></div>
                       </footer>
                   </div>
-                  <p class="has-text-light" v-text="project.info"></p>
                 </div>
               </div>
             </slide>
         </carousel>
       </div>
     </div>
-    <modal  v-show="showModal" @close="showModal = false">
+    <modal v-show="showModal" @close="showModal = false">
       <template slot="title">
         {{ title }}
       </template>
       <template slot="info">
         {{ info }}
       </template>
-      <template slot="img">
-        <img :src="img" alt="">
+      <template slot="laptopImg">
+        <img :src="laptopImg" alt="">
+      </template>
+      <template slot="previewLink">
+        <div class="column is-4"><a class="social-link" :href="previewLink" target="_blank"><font-awesome-icon class="has-text-dark is-size-1" :icon="['fab', 'github-alt']"/></a></div>
+      </template>
+      <template slot="githubLink">
+        <div class="column is-4"><a class="social-link" :href="githubLink" target="_blank"><font-awesome-icon class="has-text-dark is-size-1" icon="desktop"/></a></div>
       </template>
     </modal>
   </div>
@@ -60,7 +64,10 @@ export default {
     showModal: false,
     title: '',
     info: '',
-    img: ''
+    img: '',
+    previewLink: '',
+    githubLink: '',
+    laptopImg: ''
   }),
   computed: {
     ...mapState([
@@ -74,6 +81,9 @@ export default {
       this.title = project.title
       this.info = project.info
       this.img = project.img
+      this.previewLink = project.previewLink
+      this.githubLink = project.githubLink
+      this.laptopImg = project.laptopImg
     }
   }
 }

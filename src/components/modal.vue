@@ -4,12 +4,28 @@
          <div class="modal-background"></div>
          <div class="modal-content">
            <div class="box">
-             <slot name="title">
-             </slot>
-             <slot name="info">
-             </slot>
-             <slot name="img">
-             </slot>
+             <div class="columns">
+               <div class="column">
+                 <slot name="laptopImg">
+                 </slot>
+               </div>
+               <div class="column">
+                 <h1 class="is-size-3 is-margin-bt-20">
+                   <slot name="title">
+                   </slot>
+                 </h1>
+                 <h1 class="is-margin-bt-20">
+                   <slot name="info">
+                   </slot>
+                 </h1>
+                 <div class="columns is-centered is-mobile">
+                   <slot name="previewLink">
+                   </slot>
+                   <slot name="githubLink">
+                   </slot>
+                 </div>
+               </div>
+             </div>
            </div>
          </div>
          <button class="modal-close" @click="$emit('close')"></button>

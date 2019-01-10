@@ -4,7 +4,7 @@
       <div class="hero-head">
           <navSection></navSection>
       </div>
-      <router-view></router-view>
+        <router-view></router-view>
     </section>
   </div>
 </template>
@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style>
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

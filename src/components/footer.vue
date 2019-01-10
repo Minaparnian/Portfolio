@@ -1,9 +1,9 @@
 <template>
   <div class="columns is-centered is-mobile">
-    <div class="column is-1"><a class="social-link" href="https://www.linkedin.com/in/mina-parnian/" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'linkedin']" /></a></div>
-    <div class="column is-1"><a class="social-link" href="https://github.com/Minaparnian" target="_blank"><font-awesome-icon class="has-text-light" :icon="['fab', 'github-alt']"/></a></div>
-    <div class="column is-1"><a class="social-link" href="tel:61420646053" target="_blank"><font-awesome-icon class="has-text-light" icon="phone" /></a></div>
-    <div class="column is-1"><a class="social-link" href="mailto:minaparnian66@gmail.com"><font-awesome-icon class="has-text-light" icon="envelope" /></a></div>
+    <div class="column is-2"><a class="social-link" href="https://www.linkedin.com/in/mina-parnian/" target="_blank"><font-awesome-icon class="has-text-light is-size-3" :icon="['fab', 'linkedin']" /></a></div>
+    <div class="column is-2"><a class="social-link" href="https://github.com/Minaparnian" target="_blank"><font-awesome-icon class="has-text-light is-size-3" :icon="['fab', 'github-alt']"/></a></div>
+    <div class="column is-2"><a class="social-link" href="tel:61420646053" target="_blank"><font-awesome-icon class="has-text-light is-size-3" icon="phone" /></a></div>
+    <div class="column is-2"><a class="social-link" href="mailto:minaparnian66@gmail.com"><font-awesome-icon class="has-text-light is-size-3" icon="envelope" /></a></div>
   </div>
 </template>
 
