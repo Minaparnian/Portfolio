@@ -50,7 +50,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: 'https://minaparnian.github.io/mina-parnian-tech/',
+    assetsPublicPath: 'mina-parnian-tech',
 
     /**
      * Source Maps
