@@ -15,7 +15,7 @@ export default new Router({
       path: '/',
       name: 'Homepage',
       component: Homepage,
-      meta: {background: '/static/image-2.jpg'}
+      meta: {background: '../static/image-2.jpg'}
     },
     {
       path: '/projects',
